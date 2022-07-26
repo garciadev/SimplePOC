@@ -1,7 +1,24 @@
 {
+    "app":{
+        "cfengine":"${SERVER_APP_CFENGINE}"
+    },
+    "fusionreactor":{
+        "port":"${SERVER_FUSIONREACTOR_PORT}"
+    },
     "web":{
+        "host":"${SERVER_WEB_HOST}",
+        "http":{
+            "port":"${SERVER_WEB_HTTP_PORT}"
+        },
+        "SSL":{
+            "enable":"${SERVER_WEB_SSL_ENABLE}",
+            "port":"${SERVER_WEB_SSL_PORT}"
+        },
         "rewrites":{
             "enable":true
+        },
+        "HTTP2":{
+            "enable":"false"
         }
     }
 }
